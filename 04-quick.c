@@ -24,8 +24,8 @@ int main() {
 	vet = (int*)malloc(tamanho*sizeof(int));
 	for(i = 0; i < tamanho; i++)
 		scanf("%d", &vet[i]);
-	/* Calcula a media das somas dos pesos */
-	media = (quick(vet,tamanho)/ tamanho);
+	/* Recebe a media das somas dos pesos */
+	media = quick(vet,tamanho);
 	/* Imprime a media final */
 	printf("%.10f\n", media);
 	/* Desaloca a memoria do vetor */
@@ -65,8 +65,8 @@ double quick(int A[], int tamanho){
 		free(L0);
 		free(L1);
 	}
-	/* Retorna o valor somado de todos os pesos */
-	return total;
+	/* Retorna o valor somado de todos os pesos dividido pelo tamanho */
+	return (total/tamanho);
 }
 
 /* Implementacao das funcoes auxiliares */
