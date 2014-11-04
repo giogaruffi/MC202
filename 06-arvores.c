@@ -50,7 +50,6 @@ int main() {
 		/* Imprime o \n ao fim da impressao da arvore */
 		printf("\n");
 		/* Libera a arvore e os vetores */
-		LiberaArv(arvore);
 		free(nohs_pre);
 		free(nohs_in);
 	}
