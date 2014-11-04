@@ -53,7 +53,6 @@ int main() {
 		LiberaArv(arvore);
 		free(nohs_pre);
 		free(nohs_in);
-		free(arvore);
 	}
 
 	return 0;
@@ -195,4 +194,5 @@ void InterpretaArv(ArvBin *p, char nohs_pre[], char nohs_in[], int tamanho){
 	free(in_esq);
 	free(pre_dir);
 	free(in_dir);
+	free(p);
 }
