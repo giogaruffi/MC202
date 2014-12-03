@@ -24,7 +24,7 @@ void arvore23_insere(arvore23_t **t, int chave);
 int arvore23_busca(arvore23_t *t, int chave);
 void arvore23_imprime(arvore23_t *t);
 
-
+ 
 /* SEU PROGRAMA - MAIN */
 int main(){
     arvore23_t *arv;
